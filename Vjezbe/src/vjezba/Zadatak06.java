@@ -12,7 +12,7 @@ public class Zadatak06 {
 		
 		
 		int n=Integer.parseInt(JOptionPane.showInputDialog("Unesi broj  clanova  niza"));
-		int niz[]=new int[n];
+		int[]niz=new int[n];
 		
 		for(int i=0;i<niz.length;i++) {
 			niz[i]=Integer.parseInt(JOptionPane.showInputDialog("Unesi broj"));
