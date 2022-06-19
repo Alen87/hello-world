@@ -2,12 +2,12 @@ package vjezba;
 
 import javax.swing.JOptionPane;
 
-//Učitati članove i naći najveći član niza.
+////Učitati članove , naći najveći i  najmanji član niza
 
-public class Zadatak14 {
+public class Zadatak15 {
 	public static void main(String[] args) {
 
-		int n = Integer.parseInt(JOptionPane.showInputDialog("Unesi  broj  clanova  niza"));
+		int n = Integer.parseInt(JOptionPane.showInputDialog("Unesi  broj  clanova niza"));
 
 		int[] niz = new int[n];
 
@@ -19,15 +19,20 @@ public class Zadatak14 {
 			System.out.println(niz[i]);
 		}
 
+		int tmin = niz[0];
 		int tmax = niz[0];
+
 		for (int i = 1; i < niz.length; i++) {
-			if (tmax < niz[i]) {
+			if (tmin > niz[i]) {
+				tmin = niz[i];
+			} else if (tmax < niz[i]) {
 				tmax = niz[i];
+
 			}
 
 		}
 
-		System.out.println( "\n" + tmax);
+		System.out.println("\nNajmanji clan niza je  " + tmin + "\nNajveci clan niza je   " + tmax);
 
 	}
 }
