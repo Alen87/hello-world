@@ -14,7 +14,7 @@ int n=Integer.parseInt(JOptionPane.showInputDialog("Unesi  broj"));
 
 for(int i=1;i<=n;i++) {
 	for(int j=0;j<=n;j++) {
-		System.out.print(i+ "" +j + " ");
+		System.out.print(i+ "" +j + "  ");
 	}
 	System.out.println();
 }
