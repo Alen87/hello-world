@@ -11,7 +11,7 @@ public class Zadatak19 {
 		int b = Integer.parseInt(JOptionPane.showInputDialog("Unesi b:"));
 
 		int[][] niz = new int[a][b];
-        System.out.print("clanovi:");
+        System.out.print("Clanovi:");
 		for (int i = 0; i < niz.length; i++) {
 			for (int j = 0; j < niz[i].length; j++) {
 				niz[i][j] = Integer.parseInt(JOptionPane.showInputDialog("Unesi broj"));
