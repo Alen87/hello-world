@@ -10,10 +10,6 @@ public class Zadatak24 {
 			for (int j = 0; j <= 3; j++) {
 				if (i == 2 && j == 1) {
 					break;
-				} else if (i == 2 && j == 2) {
-					break;
-				} else if (i == 2 && j == 3) {
-                    break;
 				}
 				System.out.println(i + " " + j);
 			}
@@ -21,5 +17,4 @@ public class Zadatak24 {
 		}
 
 	}
-
 }
