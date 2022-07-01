@@ -8,8 +8,22 @@ import javax.swing.JOptionPane;
 
 public class CiklicnaTablica3 {
 	public static void main(String[] args) {
-		int red = Integer.parseInt(JOptionPane.showInputDialog("Unesi broj  redova"));
-		int kolona = Integer.parseInt(JOptionPane.showInputDialog("Unesi broj kolona"));
+		while (true) {
+			try {
+				int red = Integer.parseInt(JOptionPane.showInputDialog("Unesi broj  redova"));
+				int kolona = Integer.parseInt(JOptionPane.showInputDialog("Unesi broj kolona"));
+				ispis(lijevoGore(red, kolona));
+				break;
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(null, "Niste unijeli cijeli broj");
+				continue;
+			}
+
+		}
+	}
+
+	static int[][] lijevoGore(int red, int kolona) {
+
 		int umnozak = red * kolona;
 
 		int[][] matrica = new int[red][kolona];
@@ -56,28 +70,31 @@ public class CiklicnaTablica3 {
 				if (trenutniRed == trenutnaGranicaDesno) {
 					trenutniSmjer = 'R';
 					trenutnaKolona++;
-					
+
 					trenutnaGranicaDolje--;
 					trenutnaGranicaGore++;
 					trenutnaGranicaLijevo--;
 					trenutnaGranicaDesno++;
-					
-					
-					
-				}else {
-				trenutniRed--;
+
+				} else {
+					trenutniRed--;
 				}
+
 			}
 		}
+		return matrica;
 
+	}
+
+	static void ispis(int[][] matrica) {
 		for (int i = 0; i < matrica.length; i++) {
 			for (int j = 0; j < matrica[i].length; j++) {
 
 				System.out.printf("%4d", matrica[i][j]);
 			}
 			System.out.println();
-
 		}
 
 	}
+
 }
