@@ -45,17 +45,7 @@ public class LjubavniKalkulator {
 		System.out.println(  "    "+ ime1 + "               " + ime2);
 		System.out.print(Arrays.toString(niz1) + "    " + Arrays.toString(niz2));
 		
-		// reverseArray ime2
 		
-		 int maxIndex = niz2.length - 1;
-	        int polovicaNiza = niz2.length / 2;
-	        for(int i=0;i<polovicaNiza;i++){
-	            int temp=niz2[i];
-	            niz2[i]=niz2[maxIndex-i];
-	            niz2[maxIndex-i]=temp;
-	            System.out.println();
-	        } 
-        System.out.println(Arrays.toString(niz2));
       
 	}
 
