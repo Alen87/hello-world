@@ -2,7 +2,7 @@ package alen;
 
 import javax.swing.JOptionPane;
 
-public class CiklicnaTablicaDL {
+public class CiklicnaDoljeDesno {
 	public static void main(String[] args) {
 		
 		
