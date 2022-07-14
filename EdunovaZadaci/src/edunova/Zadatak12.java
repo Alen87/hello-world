@@ -20,22 +20,25 @@ import javax.swing.JOptionPane;
 public class Zadatak12 {
 	public static void main(String[] args) {
 
-		int a = Integer.parseInt(JOptionPane.showInputDialog("Unesi vrijednost a"));
-
-		if (a < 10 || a > 20) {
-			System.out.println("Broj  mora biti izmedu 10 i 20");
-
-		} else {
-
-			for (int i = 1; i <= a; i++) {
-				for (int j = 1; j <= a; j++) {
-					System.out.printf("%4d", i * j);
-				}
-				System.out.println();
+	int a=Integer.parseInt(JOptionPane.showInputDialog("Unesi vrijednost a"));
+	
+	if(a < 10 || a > 20) {
+		System.out.println("Unos mora biti  izmedu 10 i 20");
+	}else {
+		for(int i=1;i<=a;i++) {
+			for(int j=1;j<=a;j++) {
+				System.out.printf("%4d", i*j);
 			}
-
+			System.out.println();
 		}
-
+		
+		
+		
 	}
-
+	
+	
+	
+	
+	
+	}
 }
