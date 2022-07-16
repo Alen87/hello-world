@@ -15,23 +15,19 @@ import javax.swing.JOptionPane;
 // 89 8
 
 public class Zadatak08 {
-public static void main(String[] args) {
-	
-	int broj=Integer.parseInt(JOptionPane.showInputDialog("Unesi broj"));
-	
-	
-	if(broj < 1 || broj > 999) {
-		System.out.println("greska");
-	}else if(broj > 0  && broj < 10) {
-		System.out.println(broj);
-	}else if(broj >=10 && broj < 100) {
-		System.out.println(broj / 10);
-	}else {
-		System.out.println(broj / 100);
+	public static void main(String[] args) {
+
+		int broj = Integer.parseInt(JOptionPane.showInputDialog("Unesi broj"));
+
+		if (broj < 1 || broj > 999) {
+			System.out.println("greska");
+		} else if (broj > 0 && broj < 10) {
+			System.out.println(broj);
+		} else if (broj >= 10 && broj < 100) {
+			System.out.println(broj / 10);
+		} else {
+			System.out.println(broj / 100);
+		}
+
 	}
-	
-	
-	
-	
-}
 }
