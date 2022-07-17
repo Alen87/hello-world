@@ -25,11 +25,11 @@ public class Zadatak16 {
 			suma+=broj%10;
 			 broj/=10;
 			
-			 System.out.println(suma);
+			
 		}
 		
 		
-	
+		 System.out.println(suma);
 		
 		
 		
