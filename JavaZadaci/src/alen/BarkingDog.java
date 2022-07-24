@@ -10,7 +10,7 @@ public static void main(String[] args) {
 	
  public	static boolean shouldWakeUp(boolean barking,int hourOfDay) {
 	 
-	return ((((hourOfDay >0) && (hourOfDay < 8)) || (hourOfDay > 22) && (hourOfDay<=23)) && (barking)) ?true:false;
+	return ((((hourOfDay >=0) && (hourOfDay < 8)) || (hourOfDay > 22) && (hourOfDay<=23)) && (barking)) ?true:false;
 		
 } 
 }
