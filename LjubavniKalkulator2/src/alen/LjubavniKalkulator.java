@@ -53,7 +53,7 @@ public class LjubavniKalkulator {
 					int broj1 = niz[i];
 					int broj2 = niz[zbroj.length() - 1 - i];
 					int rezultat = broj1 + broj2;
-					System.out.print(rezultat + " ");
+					System.out.print( rezultat + " ");
 					System.out.println();
 
 				}
