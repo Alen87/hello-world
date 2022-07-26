@@ -2,14 +2,13 @@ package alen;
 
 public class NumberInWord {
 	public static void main(String[] args) {
-		
+
 		printNumberInWord(-4);
-		
-		
+
 	}
 
 	public static void printNumberInWord(int number) {
-		switch(number) {
+		switch (number) {
 		case 0:
 			System.out.println("ZERO");
 			break;
@@ -40,19 +39,12 @@ public class NumberInWord {
 		case 9:
 			System.out.println("NINE");
 			break;
-			default:
-				System.out.println("OTHER");
-				break;
+		default:
+			System.out.println("OTHER");
+			break;
 
 		}
-		
-		
-		
-		
-		
-		
+
 	}
-	
-	
-	
+
 }
