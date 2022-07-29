@@ -5,23 +5,20 @@ public class EvenDigitSum {
 	public static int getEvenDigitSum(int number) {
 
 		int sum = 0;
-		int remindNumber = 0;
+		int remaindNumber;
 
 		if (number < 0) {
 			return -1;
 		}
-
 		while (number > 0) {
-			remindNumber = number % 10;
+			remaindNumber = number % 10;
 			number /= 10;
 
-			if (remindNumber % 2 == 0) {
-				sum += remindNumber;
+			if (remaindNumber % 2 == 0) {
+				sum += remaindNumber;
 			}
-
 		}
-
-		return sum;
+            return sum;
 	}
 
 	public static void main(String[] args) {
