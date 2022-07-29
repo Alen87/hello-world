@@ -24,7 +24,7 @@ public class FirstAndLastDigitSum {
 		number/=10;
 		
 	}
-	System.out.println(firstDigit);
+	
 	return firstDigit + lastDigit;
 	}
 
