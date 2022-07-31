@@ -1,29 +1,35 @@
 package alen;
 
-
-
 public class SharedDigit {
 
-	public static boolean hasSharedDigit(int number1, int number2) {
-
-		if ((number1 < 10 || number1 > 99) || (number2 < 10 || number2 > 99)) {
+	public static boolean hasSharedDigit(int a, int b) {
+		if ((a < 10 || a > 99) || (b < 10 || b > 99)) {
 			return false;
 		}
-		int num1LastDigit = number1 % 10;
-		int num1FirstDigit = number1 / 10;
-		int num2FirstDigit = number2 % 10;
-		int num2LastDigit = number2 / 10;
-		
 
-		return num1FirstDigit == num2FirstDigit || num1FirstDigit == num2LastDigit || num1LastDigit == num2FirstDigit
-				|| num1LastDigit == num2LastDigit;
+		int aFirstDigit = a / 10;
+		int aLastDigit = a % 10;
+		int bFirstDigit = b / 10;
+		int bLastDigit = b % 10;
+		
+		if(aFirstDigit == bFirstDigit || aFirstDigit ==bLastDigit || aLastDigit == bFirstDigit || aLastDigit==bLastDigit) {
+			return true;
+		}else {
+			return false;
+		}
+		
+		
+		
+		
 
 	}
 
 	public static void main(String[] args) {
 
 		System.out.println(hasSharedDigit(12, 23));
-		
+		System.out.println(hasSharedDigit(9, 99));
+		System.out.println(hasSharedDigit(15, 55));
+
 	}
 
 }

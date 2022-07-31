@@ -13,28 +13,22 @@ public class LastDigitChecker {
 	}
 
 	public static boolean isValid(int number) {
-		if(number >=10 && number <=1000) {
+		if (number >= 10 && number <= 1000) {
 			return true;
-		}else {
+		} else {
 			return false;
 		}
 	}
-	
-	
-	
+
 	public static void main(String[] args) {
-		System.out.println(hasSameLastDigit(41,22,71));
-		System.out.println(hasSameLastDigit(23,32,42));
-		System.out.println(hasSameLastDigit(9,99,999));
-		
+		System.out.println(hasSameLastDigit(41, 22, 71));
+		System.out.println(hasSameLastDigit(23, 32, 42));
+		System.out.println(hasSameLastDigit(9, 99, 999));
+
 		System.out.println(isValid(10));
 		System.out.println(isValid(468));
 		System.out.println(isValid(1051));
-		
-		
-		
-		
-		
+
 	}
-	
+
 }
