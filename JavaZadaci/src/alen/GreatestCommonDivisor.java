@@ -1,6 +1,6 @@
 package alen;
 
-public class GreatestCommonDivisior {
+public class GreatestCommonDivisor {
 
 	public static int getGreatestCommonDivisor(int first,int second) {
 		if((first < 10) || (second<10)) {
