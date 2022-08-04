@@ -15,7 +15,7 @@ public class NumberToWords2 {
 		while (count > 0) {
 
 			lastDigit = reversed % 10;
-			reversed/=10;
+			reversed /= 10;
 
 			switch (lastDigit) {
 			case 0:
@@ -103,12 +103,11 @@ public class NumberToWords2 {
 		System.out.println(getDigitCount(123));
 		System.out.println(getDigitCount(-12));
 		System.out.println(getDigitCount(5200));
-		
+
 		System.out.println();
-		
-		
+
 		numberToWords(123);
-	    System.out.println();
+		System.out.println();
 		numberToWords(1010);
 		System.out.println();
 		numberToWords(1000);
