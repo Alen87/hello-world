@@ -31,11 +31,10 @@ public class LargestPrime {
 
 		if (number > 1) {
 
-			for (int i = number ; i >= 2; i--) {
+			for (int i = number; i >= 2; i--) {
 				if (number % i == 0) {
 					number = i;
-					
-					
+
 				}
 			}
 
@@ -47,11 +46,11 @@ public class LargestPrime {
 
 	public static void main(String[] args) {
 
-//		System.out.println(getLargestPrime(21));
-//		System.out.println(getLargestPrime(217));
-//		System.out.println(getLargestPrime(0));
-//		System.out.println(getLargestPrime(45));
-//		System.out.println(getLargestPrime(-1));
+		System.out.println(getLargestPrime(21));
+		System.out.println(getLargestPrime(217));
+		System.out.println(getLargestPrime(0));
+		System.out.println(getLargestPrime(45));
+		System.out.println(getLargestPrime(-1));
 		System.out.println(getLargestPrime(7));
 
 	}
