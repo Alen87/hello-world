@@ -58,37 +58,29 @@ public class InputCalculator {
 
 		int number = 0;
 		int sum = 0;
-		double average = 0;
 		double count = 0;
+		double average = 0;
 
 		while (true) {
-			boolean isNextInt = scanner.hasNextInt();
-			if (isNextInt) {
+
+			boolean ifHasNext = scanner.hasNextInt();
+			if (ifHasNext) {
 				number = scanner.nextInt();
-				count++;
 				sum += number;
+				count++;
 				average = sum / count;
 
 			} else {
-				System.out.println("SUM = " + sum + " AVG = " + ((long) Math.round(average)));
+				System.out.println("SUM = " + sum + " AVG = " + (long) Math.round(average));
 				break;
 			}
-
-			scanner.nextLine();
-
+			
 		}
-
 		scanner.close();
-
 	}
-	
-	
+
 	public static void main(String[] args) {
 		inputThenPrintSumAndAverage();
 	}
-	
-	
-	
-	
 
 }
