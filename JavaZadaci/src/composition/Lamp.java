@@ -14,7 +14,7 @@ public class Lamp {
 	}
 
 	public void turnOn() {
-		System.out.println("Lamo -> Turning on ");
+		System.out.println("Lamp -> Turning on ");
 	}
 
 	public String getStyle() {
