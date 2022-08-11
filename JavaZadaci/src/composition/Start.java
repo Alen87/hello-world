@@ -61,7 +61,7 @@ public class Start {
 		
 		Bedroom  bedroom = new Bedroom("Alen",wall1,wall2,wall3,wall4,ceiling,bed,lamp);
 		
-		System.out.println();
+		
 		
 		bedroom.makeBed();
 		
