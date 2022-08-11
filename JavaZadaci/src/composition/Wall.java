@@ -2,15 +2,17 @@ package composition;
 
 public class Wall {
 
-	private String wall;
+	private String direction;
 
-	public Wall(String wall) {
+	public Wall(String direction) {
 		super();
-		this.wall = wall;
+		this.direction = direction;
 	}
 
-	public String getWall() {
-		return wall;
+	public String getDirection() {
+		return direction;
 	}
+
+	
 
 }
