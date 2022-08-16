@@ -92,14 +92,28 @@ public static int[] sortIntegers(int[]unsortedArray) {
 	return sortedArray;
 }
 	
-
+public static int[]sortedArray(int[] array){
+	int temp;
+	for(int i=0;i<array.length;i++) {
+		for(int j=0;j<array.length-1;j++) {
+			if(array[i]> array[j]) {
+			temp=array[i];
+			array[i]=array[j];
+			array[j]=temp;
+			}
+		}
+	}
+	
+	return array;
+	
+}
 	
 	
 	
 	public static void main(String[] args) {
 		
-		
-		printArray(sortIntegers(getIntegers(5)));
+		printArray(sortedArray(getIntegers(5)));
+		//printArray(sortIntegers(getIntegers(5)));
 	}
 	
 }
