@@ -21,7 +21,8 @@ public class LjubavniKalkulator {
 					count++;
 				}
 			}
-			niz[i] = count;
+			niz[i] =count;
+			
 		}
 
 		
